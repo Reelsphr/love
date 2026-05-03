@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Прости меня, любимый.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="global-bg"></div>
+  <div class="floating-layer" id="floatingLayer" aria-hidden="true"></div>
+
+  <header class="section hero" id="hero">
+    <div class="hero__halo"></div>
+    <h1 class="hero__title reveal">Прости меня, любимый.</h1>
+        <a href="#apology" class="scroll-indicator" aria-label="Прокрутить ниже">↓</a>
+  </header>
+
+  <main>
+    <section class="section" id="apology">
+      <div class="glass-card reveal">
+        <!-- INSERT YOUR APOLOGY TEXT HERE -->
+        <p>Я понимаю, что мог сильно ранить тебя тоном своего голоса. Я не хотел так поступать. Ты мне невероятно важен, я очень люблю тебя, я лишь хочу чтобы ты был рядом со мной в такие моменты, ведь ты - самое теплое и прекрасное, что у меня есть. Я очень сильно люблю тебя и мне безумно стыдно за свое поведение. Впредь обещаю разговаривать с тобой только нежно и с любовью, а звать играть буду только с букетом цветов и вкусняшек. Договорились, малыш мой?</p>
+      </div>
+    </section>
+
+    <section class="section collage" id="collage">
+      <div class="collage__grid">
+        <figure class="photo photo--1 reveal"><!-- REPLACE IMAGE URL HERE --><img src="images/photo1.jpg" alt="Романтичный момент 1" /><span class="photo__heart">❤</span></figure>
+        <figure class="photo photo--2 reveal"><!-- REPLACE IMAGE URL HERE --><img src="images/photo2.jpg" alt="Романтичный момент 2" /><span class="photo__heart">❤</span></figure>
+        <figure class="photo photo--3 reveal"><!-- REPLACE IMAGE URL HERE --><img src="images/photo3.jpg" alt="Романтичный момент 3" /><span class="photo__heart">❤</span></figure>
+        <figure class="photo photo--4 reveal"><!-- REPLACE IMAGE URL HERE --><img src="images/photo4.jpg" alt="Романтичный момент 4" /><span class="photo__heart">❤</span></figure>
+        <figure class="photo photo--5 reveal"><!-- REPLACE IMAGE URL HERE --><img src="images/photo5.jpg" alt="Романтичный момент 5" /><span class="photo__heart">❤</span></figure>
+      </div>
+    </section>
+
+    <section class="section" id="second-text">
+      <div class="soft-text reveal"><!-- INSERT SECOND TEXT HERE -->Я выбираю нас и нашу любовь даже в самые трудные моменты. Я хочу быть рядом лишь с тобой, Хоузенька.</div>
+    </section>
+
+    <section class="section game" id="game">
+      <div class="game__intro reveal" id="gameIntro">
+        <h2>Сыграем в игру, любовь моя?</h2>
+        <div class="game__actions">
+          <button class="btn" data-start-game>Да.</button>
+          <button class="btn" data-start-game>Конечно.</button>
+        </div>
+      </div>
+
+      <div class="game__board" id="gameBoard" hidden>
+        <div class="game__instruction-wrap"><p class="game__instruction">Выбирай один лепесток по очереди.</p></div>
+        <div class="flower-wrap">
+          <div class="flower" id="flower" aria-label="Ромашка"></div>
+          <div class="flower__center"></div>
+        </div>
+        <p class="game__result" id="gameResult"></p>
+        <div class="fallen-petals" id="fallenPetals" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section finale" id="finale">
+      <h2 class="finale__text reveal">Давай помиримся, малыш Хоу?</h2>
+      <div class="bouquet reveal" id="bouquet" aria-hidden="true"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
